@@ -1,0 +1,471 @@
+/*
+----------------------------------------------------------------
+	remove the white gap for 4 sides in elementor
+----]------------------------------------------------------------
+*/
+.elementor-section .elementor-column-gap-default > .elementor-column > .elementor-element-populated{
+	padding:0px;
+}
+
+.admin-bar .sticky-header{
+	top:32px !important;	
+}
+
+
+/********* Pagination Style *************/
+.pagination{
+	
+}
+.pagination li,
+.pagination li{
+	position: relative;
+    display: inline-block;
+	margin: 0px 3.5px;
+}
+.pagination li a,
+.pagination li span {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 39px;
+    text-align: center;
+	border-radius: 50%;
+	border: 2px solid #0e2a4e;
+	width: 43px;
+	height:43px;
+    color: #0e2a4e;
+    display: inline-block;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-transition: all 0.3s;
+    transition: all 500ms ease;
+}
+
+.pagination li:hover a, 
+.pagination li.active span,
+.pagination li a:hover span,
+.pagination li.active a,
+.pagination li span.current {
+    color: #fff;
+	border-color:#0e2a4e;
+	background-color:#0e2a4e;
+}
+
+/***************** Blog Sidebar Style*******************/
+.widget{
+	position: relative;
+	margin-bottom: 40px;
+}
+.widget ul,
+.widget ol{
+	position:relative;	
+	margin:0px;
+	padding:0px;
+}
+.widget ul li,
+.widget ol li{
+	position: relative;
+	display:block;
+	font-size: 16px;
+    color: #444444;
+	font-weight:400;
+	line-height: 28px;
+	border-bottom: 1px solid #e6e6e6;
+    padding-bottom: 7px;
+    margin-bottom: 7px;
+	padding-left:15px;
+	text-transform:capitalize;
+}
+.widget ul li:last-child,
+.widget ol li:last-child{
+	margin-bottom:0px;
+	padding-bottom:0px;
+	border-bottom:0px;
+}
+.widget ul li:before {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    content: "\f107";
+    transform: rotate(-90deg);
+    color: #c8c8c8;
+    font-size: 14px;
+	font-weight: 900;
+    font-family: 'Font Awesome 5 pro' !important;
+	transition: all 500ms ease;
+}
+.widget ul li ul li,
+.widget ol li ol li{
+	padding-bottom:0px;
+	border-bottom:0px;
+	margin-bottom:0px;
+	border-top: 1px solid #e6e6e6;
+	margin-top:7px;
+	padding-top:7px;
+}
+.widget ul li ul li:before,
+.widget ol li ol li:before{
+	top:7px;	
+}
+.widget ul li a,
+.widget ol li a{
+	position: relative;
+	display:inline-block;
+    font-size: 16px;
+	font-weight:400;
+    color: #444444;
+	line-height: 28px;
+	text-transform: capitalize;
+}
+.widget ul li a:hover,
+.widget ol li a:hover{
+	color: #3ca586;
+}
+
+
+.widget .tagcloud{
+	position:relative;
+	margin: 0px;
+	float: left;
+	display: inline-block;
+}
+.widget .tagcloud a{	
+	position: relative;
+    display: inline-block;
+	font-weight: 400;
+    font-size: 16px !important;
+    line-height: 24px;
+    padding: 6px 16px;
+    background: #ffffff;
+    color: #a6a6a6;
+	float: left;
+    margin: 0px 10px 10px 0px;
+	text-transform: capitalize;
+	border: 1px solid #e4e4e4;
+	min-width: 100px;
+    transition: all 300ms ease;
+    -webkit-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    text-align: center;	
+}
+.widget .tagcloud a:hover{
+	color: #fff;
+    border-color: #3ca586;
+    background-color: #3ca586;
+}
+
+/***************** Service Sidebar Style*******************/
+.service-widget {
+	position: relative;
+    margin-bottom: 50px;
+}
+.service-widget ul li{
+	position:relative;
+	display: block;
+    margin-bottom: 1px;
+    transition: all 500ms ease;
+}
+.service-widget ul li:last-child{
+    margin-bottom: 0px;
+}
+.service-widget ul li a{
+	position:relative;
+	font-size: 21px;
+    line-height: 28px;
+    color: #0e2a4e;
+    font-weight: 600;
+    display: block;
+	background:#edf1f4;
+	border: 1px solid #dadfe3;
+    padding: 14px 30px;
+	z-index: 1;
+}
+.service-widget ul li:hover a,
+.service-widget ul li.current-menu-item a{
+	color: #fff;
+	background-color:#0e2a4e;
+	transition: all 500ms ease;
+}
+.service-widget ul li:hover a:before, 
+.service-widget ul li.current-menu-item a:before {
+    width: 100%;
+}
+
+/***************** Footer Widget Style*******************/
+.footer-widget{
+	position:relative;
+}
+.footer-widget ul,
+.footer-widget ol{
+	position:relative;
+	margin:0px;
+}
+.footer-widget ul li,
+.footer-widget ol li{
+    display: block;
+    position: relative;   
+	font-size: 17px;
+    color: #fff;
+    font-weight: 400;	
+	line-height: 28px;
+    margin-bottom: 8px;
+}
+.footer-widget ul li:last-child,
+.footer-widget ol li:last-child{
+	margin-bottom:0px;
+}
+.footer-widget ul li ul li,
+.footer-widget ol li ol li{
+	margin-bottom:0px;
+	margin-top:10px;
+	margin-left:15px;
+}
+.footer-widget ul li a,
+.footer-widget ol li a{
+    position: relative;
+    color: #ffffff;
+	display:block;
+	font-size: 17px;
+    font-weight: 400;
+	text-transform:capitalize;
+	transition: all 100ms linear;
+    transition-delay: 0.1s;
+}
+.footer-widget ul li a:hover,
+.footer-widget ol li a:hover{
+	color: #3ca586;	
+}
+
+/****** comment Style ***************/
+.wellson-comment-item .wellson-comment-item{
+	margin-left:80px;
+}
+.sidebar-page-container .reply-form-box .group-title h3 small a{
+	position: relative;
+	display: inline-block;
+	font-size: 25px;
+	line-height: 40px;
+	font-weight: 700;
+	text-transform: capitalize;
+	color: #444444;
+}
+.sidebar-page-container .wellson-comment-item .reply-form-box .group-title small a:hover,
+.sidebar-page-container .reply-form-box .logged-in-as a{
+	color: #3ca586;
+}
+.blog-details-content .comment-box .comment-inner > .wellson-comment-item:last-child .comment{
+	margin-bottom: 0px;
+	border-bottom:none;
+}
+.blog-details-content .comment-box,
+.blog-details-content .comments-form-area{
+	margin-top:80px;
+	margin-bottom:0px;	
+}
+
+.wellson-comment-item .comments-form-area {
+    margin: 0px;
+    padding: 25px 30px 30px;
+    border-bottom: 1px solid #eeeeee;
+}
+.service-details.project-style-2{
+	padding: 120px 0px 60px;
+}
+/************ custom style *********************/
+.service-sidebar.left-sidebar,
+.right-sidebar .blog-details-content,
+.right-sidebar .blog-standard-content{
+	margin-right: 30px;
+}
+.service-sidebar.right-sidebar,
+.left-sidebar .blog-details-content,
+.left-sidebar .blog-standard-content{
+	margin-left: 30px;
+}
+.page-title .content-box .bread-crumb li{
+	margin-right: 11px;
+	padding-right:12px;
+}
+.main-footer .widget-section .newsletter-widget .widget-content .theme-btn-one:before,
+.main-footer .widget-section .newsletter-widget .widget-content .theme-btn-one:after,
+.main-footer .widget-section .newsletter-widget .widget-content .theme-btn-one span:before{
+	display: none;
+}
+.main-footer .widget-section .newsletter-widget .widget-content .theme-btn-one span{
+	padding-right: 0px;
+}
+.main-footer .widget-section .newsletter-widget .widget-content button:hover span{
+	color: #143248 !important;
+}
+.main-footer .widget-section .contact-widget .info-list li a{
+	text-transform:none;
+}
+/*** 
+
+====================================================================
+			Team-details-Page
+====================================================================
+
+***/
+.team-details{
+	position: relative;
+	padding: 120px 0px 120px 0px;
+	background-color:#ffffff;
+	z-index:10;
+}
+
+.team-details .image-box{
+	position: relative;
+	display: block;
+	padding-right: 40px;
+}
+
+.team-details .image-box img{
+	width: 100%;
+}
+
+.team-details .image-box .image-2{
+	position: absolute;
+	left: 0px;
+	bottom: 66px;
+}
+
+.team-details .image-box .image-shape{
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	width: 271px;
+	height: 231px;
+	background-repeat: no-repeat;
+	z-index: -1;
+}
+
+.team-details .content-box{
+	position: relative;
+	display: block;
+	margin-top: -14px;
+}
+
+.team-details .content-box h2{
+	position: relative;
+	display: block;
+	font-size: 48px;
+	line-height: 54px;
+	font-weight: 700;
+	margin-bottom: 24px;
+}
+
+.team-details .content-box h2 span{
+	font-size: 32px;
+	display: block;
+}
+
+.team-details .content-box .designation{
+	position: relative;
+	display: block;
+	font-size: 22px;
+	line-height: 30px;
+	margin-bottom: 24px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.team-details .content-box .text{
+	position: relative;
+	display: block;
+	margin-bottom: 26px;
+}
+
+.team-details .content-box .text p{
+	margin-bottom: 26px;
+}
+
+.team-details .content-box .text h3{
+	display: block;
+	font-size: 22px;
+	line-height: 32px;
+	font-weight: 600;
+	margin-bottom: 15px;
+}
+
+.team-details .content-box .text .list-item li{
+	position: relative;
+	display: block;
+	padding-left: 30px;
+	margin-bottom: 13px;
+}
+
+.team-details .content-box .text .list-item li:last-child{
+	margin-bottom: 0px;
+}
+
+.team-details .content-box .text .list-item li:before{
+	position: absolute;
+    content: '';
+    background-image: url(../images/icons/icon-34.png);
+    width: 20px;
+    height: 20px;
+    left: 0px;
+    top: 7px;
+    background-repeat: no-repeat;
+}
+
+.team-details .content-box .contact-inner h6 a{
+	display: block;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 700;
+	color: #242424;
+	margin-bottom: 20px;
+}
+
+.team-details .content-box .contact-inner h3{
+	display: block;
+	font-size: 22px;
+	line-height: 38px;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+
+.team-details .content-box .contact-inner h3 a{
+	display: inline-block;
+	color: #242424;
+}
+
+.team-details .content-box .contact-inner h3 a:hover{
+	color: #a9774e;
+}
+
+.team-details .content-box .social-links li{
+	position: relative;
+	display: inline-block;
+	float: left;
+	margin-right: 10px;
+}
+
+.team-details .content-box .social-links li:last-child{
+	margin: 0px !important;
+}
+
+.team-details .content-box .social-links li a{
+	position: relative;
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	line-height: 52px;
+	text-align: center;
+	border: 1px solid #3ca586;
+	border-radius: 50%;
+	font-size: 16px;
+	color: #242424;
+}
+
+.team-details .content-box .social-links li a:hover{
+	background:#3ca586;
+	color: #fff;
+}
