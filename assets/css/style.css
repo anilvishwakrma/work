@@ -311,8 +311,42 @@ a.header_logo {
     background: #3ca586cc;
     font-size: 18px;
     width: 100%;
-    text-align: center;
+    /* text-align: center; */
     padding: 21px 0;
+    display: flex;
+    padding: 8px 6px;
+    align-items: center;
+}
+
+.setup_count_set {
+    background: #fff;
+    color: #000;
+    width: 35px;
+    height: 36px;
+    border-radius: 50% 6%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: 800;
+    color: green;
+    position: absolute;
+    top: -3px;
+    left: -3px;
+}
+
+.how_to_work_new_box_front h2 span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #000000;
+    color: #fff;
+    margin-right: 5px;
+
 }
 
 .how_to_work_new_section {
@@ -350,6 +384,9 @@ a.header_logo {
     padding: 60px 0;
 }
 
+.list-style-one li {
+    margin-bottom: 0px;
+}
 
 @media (max-width: 768px) {
     a.header_logo {
